@@ -1,7 +1,8 @@
 # Viral sequencing workflow
 ## Published in Tse et al., PLoS Pathogens, 2025
 
-### Hardware, operating systen, software
+### Hardware, operating system, software
+---
 - Mac (arm64)
 - Mac OS v15.1 (Sequoia)
 - Terminal v2.14
