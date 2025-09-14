@@ -20,7 +20,9 @@ Viral RNA was isolated from rescue population supernatants. cDNA was then genera
 
 ### Data analysis
 ---
-Nanopore sequencing reads (FASTQ) were aligned to a reference sequence (codon-optimized Rs3367-CoV spike; FASTA format) using minimap2 (https://github.com/lh3/minimap2) [63]. Genotype likelihoods and variant calls in the resulting alignment files (.bam) were determined using bcftools (https://www.htslib.org/) [64], and the sequence alignments and variant calls (S3 File) were visualized with Integrative Genomics Browser (IGV; https://igv.org/) [65]. The complete analysis pipeline is available at https://github.com/chandranlab/tse2025. The sequencing alignments are available in the Sequence Read Archive (SRA) under Bioproject PRJNA1313131.<img width="468" height="217" alt="image" src="https://github.com/user-attachments/assets/f58da992-4425-4fe8-a62a-ea2c393e7ba9" />
+Nanopore sequencing reads (FASTQ) were aligned to a reference sequence ([codon-optimized Rs3367-CoV spike](Rs3367_CoV_S_ref.fasta); FASTA format) using minimap2. Genotype likelihoods and variant calls in the resulting alignment files (.bam) were determined using bcftools, and the sequence alignments and variant calls (were visualized with Integrative Genomics Browser. The sequencing alignments (.bam) are available in the Sequence Read Archive (SRA) under Bioproject PRJNA1313131.
+
+The analysis workflow is implemented in bash script [`pooled_CRISPR_screen_Gecko_v2_reorient.sh`]
 
 
 #### Input data files
