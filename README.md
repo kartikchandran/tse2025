@@ -27,4 +27,3 @@ The above analysis workflow is implemented in bash script [`pooled_CRISPR_screen
 #### Demo dataset
 ---
 A sample dataset for testing the bash script (gzipped FASTQ R1 and R2 files containing 2,500 reads) can be downloaded [here](https://github.com/chandranlab/mittler_2024/tree/main/demo_fastq_files).
----
