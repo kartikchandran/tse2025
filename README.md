@@ -33,3 +33,6 @@ The bam alignment files are available in the Sequence Read Archive (SRA) under B
 ### Demo dataset
 ---
 A sample dataset for testing the bash script (gzipped FASTQ file containing 2,500 reads) is available [here](sample.fastq.gz).
+
+Run the bash script from the folder containing the FASTQ file(s) and reference FASTA file as follows:
+`bash mm2_batch_v1.sh Rs3367_CoV_S_ref.fasta`
