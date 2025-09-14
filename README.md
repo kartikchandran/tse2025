@@ -20,7 +20,7 @@ Viral RNA was isolated from rescue population supernatants. cDNA was then genera
 
 ### Data analysis
 ---
-The following analysis workflow is implemented in the bash script: [`pooled_CRISPR_screen_Gecko_v2_reorient.sh`](mm2_batch_v1.sh).
+The following analysis workflow is implemented in the bash script: [`mm2_batch_v1.sh`](mm2_batch_v1.sh).
 - Nanopore sequencing reads (FASTQ) were aligned to a reference nucleotide sequence ([codon-optimized Rs3367-CoV spike](Rs3367_CoV_S_ref.fasta); FASTA format) using minimap2.
 - The output `.sam` aligment file was converted to a `.bam` file.
 - The bam file header was edited to add the readgroups (@RG) field.
