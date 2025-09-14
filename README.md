@@ -32,4 +32,4 @@ The bam alignment files are available in the Sequence Read Archive (SRA) under B
 
 ### Demo dataset
 ---
-A sample dataset for testing the bash script (gzipped FASTQ file containing 2,500 reads) is available [here](https://github.com/chandranlab/mittler_2024/tree/main/demo_fastq_files).
+A sample dataset for testing the bash script (gzipped FASTQ file containing 2,500 reads) is available [here](sample.fastq.gz).
