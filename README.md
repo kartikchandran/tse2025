@@ -1,11 +1,18 @@
 # Viral sequencing workflow
 ## Published in Tse et al., PLoS Pathogens, 2025
+
 ### Hardware, operating systen, software
 - Mac (arm64)
 - Mac OS v15.1 (Sequoia)
 - Terminal v2.14
 - GNU bash v3.2.57(1)-release (arm64-apple-darwin24)
 - minimap2 v2.30-r1287 (available [here](https://github.com/lh3/minimap2))
+- samtools v1.22.1
+- bcftools v1.22
+- htslib v1.22
+  - Available [here](https://www.htslib.org)
+- Integrative Genomics Viewer (IGV) v2.19.5 (available [here](https://www.igv.org))
+   
 ### Data acquisition
 A genome-scale CRISPR/Cas9 cell-survival screen for virus dependency factors was performed as described in Mittler et al.
 
