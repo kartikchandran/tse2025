@@ -22,14 +22,14 @@ Viral RNA was isolated from rescue population supernatants. cDNA was then genera
 ---
 The following analysis workflow is implemented in the bash script: [`pooled_CRISPR_screen_Gecko_v2_reorient.sh`](mm2_batch_v1.sh).
 - Nanopore sequencing reads (FASTQ) were aligned to a reference nucleotide sequence ([codon-optimized Rs3367-CoV spike](Rs3367_CoV_S_ref.fasta); FASTA format) using minimap2.
-- The output sam aligment file was converted to a bam file.
+- The output `.sam` aligment file was converted to a `.bam` file.
 - The bam file header was edited to add the readgroups (@RG) field.
 - The bam file was sorted and indexed.
 - Genotype likelihoods and variant calls in the resulting aligned and sorted bam file were output as `.vcf` variant call format files using `bcftools mpileup` and `bcftools call`.
-- The bam and vcf files were visualized with Integrative Genomics Browser
+- The bam and vcf files were visualized with Integrative Genomics Browser.
 
 The bam alignment files are available in the Sequence Read Archive (SRA) under Bioproject PRJNA1313131. The VCF files are available as supplementary files in the manuscript. 
 
 ### Demo dataset
 ---
-A sample dataset for testing the bash script (gzipped FASTQ R1 and R2 files containing 2,500 reads) can be downloaded [here](https://github.com/chandranlab/mittler_2024/tree/main/demo_fastq_files).
+A sample dataset for testing the bash script (gzipped FASTQ file containing 2,500 reads) is available [here](https://github.com/chandranlab/mittler_2024/tree/main/demo_fastq_files).
