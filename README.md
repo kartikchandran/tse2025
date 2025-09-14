@@ -15,13 +15,16 @@
 - Integrative Genomics Viewer (IGV) v2.19.5 (available [here](https://www.igv.org))
    
 ### Data acquisition
-A genome-scale CRISPR/Cas9 cell-survival screen for virus dependency factors was performed as described in Mittler et al.
+---
+Viral RNA was isolated from rescue population supernatants. cDNA was then generated through reverse transcription with a VSV genome-specific primer and amplified by PCR with VSV-specific primers flanking the spike gene. Following this, long-read DNA sequencing on the Oxford Nanopore Technologies (ONT) platform (Plasmidsaurus) was performed to identify mutations present in the viral population.
 
-A549 cells transduced with a lentiviral pool encoding the [Gecko-v2 CRISPR/Cas9-based gene inactivation library](https://www.addgene.org/pooled-library/zhang-human-gecko-v2/) were either left untreated or exposed to virus. The surviving cells were expanded and their genomic DNA was isolated. Experiments were performed in biological duplicate to yield 4 samples (control-rep1, virus-rep1, control-rep2, virus-rep2). 
+### Data analysis
+---
+Nanopore sequencing reads (FASTQ) were aligned to a reference sequence (codon-optimized Rs3367-CoV spike; FASTA format) using minimap2 (https://github.com/lh3/minimap2) [63]. Genotype likelihoods and variant calls in the resulting alignment files (.bam) were determined using bcftools (https://www.htslib.org/) [64], and the sequence alignments and variant calls (S3 File) were visualized with Integrative Genomics Browser (IGV; https://igv.org/) [65]. The complete analysis pipeline is available at https://github.com/chandranlab/tse2025. The sequencing alignments are available in the Sequence Read Archive (SRA) under Bioproject PRJNA1313131.<img width="468" height="217" alt="image" src="https://github.com/user-attachments/assets/f58da992-4425-4fe8-a62a-ea2c393e7ba9" />
 
-Amplicons containing single-guide RNA (sgRNA) sequences were prepared from the genomic gDNA and ligated to Illumina adapters. Libraries were pooled and sequenced on the Illumina NextSeq 500 (2x150 bp, paired-end mode). FASTQ files were demultiplexed and processed to remove technical adapter sequences.
 
 #### Input data files
+
 1. control-rep1_R1.fastq
 2. control-rep1_R2.fastq
 3. virus-rep1_R1.fastq
